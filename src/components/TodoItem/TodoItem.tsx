@@ -20,8 +20,8 @@ const TodoItem: React.FC<TodoItemProps> = ({ id, text, completed }) => {
       >
         {text}
       </span>
-      {completed && <span> done ✔️ </span>}
       <button onClick={() => dispatch(deleteTodo(id))}>Remove</button>
+      {completed ? <span> done ✔️ </span> : <span />}
     </li>
   );
 };

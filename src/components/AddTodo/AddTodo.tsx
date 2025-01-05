@@ -31,7 +31,7 @@ const AddTodo: React.FC = () => {
 
     dispatch(addTodo(trimmedText));
     setText("");
-    setError(null); // Clear error on successful add
+    setError(null);
   };
 
   useEffect(() => {

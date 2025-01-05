@@ -7,9 +7,20 @@
   flex-direction: column;
 
   form {
-
     input {
       margin-right: 20px;
+    }
+  }
+
+  .themeswitch {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    animation: slideIn .5s ease-in-out forwards;
+    img {
+      height: 30px;
+      width: 30px;
     }
   }
 }
@@ -17,4 +28,15 @@
 .error {
   color: red;
   font-size: 0.875rem;
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform:  scale(1);
+  }
+  
 }

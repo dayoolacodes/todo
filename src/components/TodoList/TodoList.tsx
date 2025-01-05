@@ -12,11 +12,11 @@ const TodoList: React.FC = () => {
   }
 
   return (
-    <ul className={classes.listwrap} >
+    <ol className={classes.listwrap} >
       {todos.map((todo) => (
         <TodoItem key={todo.id} {...todo} />
       ))}
-    </ul>
+    </ol>
   );
 };
 
