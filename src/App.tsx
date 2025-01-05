@@ -40,7 +40,7 @@ const App: React.FC = () => {
           <img
             src={
               isDarkMode
-                ? "public/assets/light-on-bulb-dark-mode.svg"
+                ? "./assets/light-on-bulb-dark-mode.svg"
                 : "./assets/light-on-bulb-light-mode.svg"
             }
             alt={isDarkMode ? "Light" : "Dark"}
