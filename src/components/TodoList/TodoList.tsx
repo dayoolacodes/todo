@@ -21,9 +21,13 @@ const TodoList: React.FC = () => {
 
   return (
     <ul className={classes.listwrap} ref={listRef}>
-      {todos.map((todo) => (
-        <TodoItem key={todo.id} {...todo} />
-      ))}
+      {[...todos]
+        .sort((a, b) => {
+          return a.text.localeCompare(b.text);
+        })
+        .map((todo) => (
+          <TodoItem key={todo.id} {...todo} />
+        ))}
     </ul>
   );
 };
